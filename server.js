@@ -19,7 +19,7 @@ con.then(db => {
     if(!db) return process.exit(1)
 
     app.listen(port, () => {
-        console.log(`Server is running on port: http://localhost:${port}`)
+        console.log(`Server is running on port: ${port}`)
     })
 
     app.on("error", err => console.log(`Failed To Connect with HTTP Server: ${err}`))
